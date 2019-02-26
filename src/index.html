@@ -2,13 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <!-- <title>Document</title> -->
+    <title>AHH</title>
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <!-- /* primera pagina */ -->
+<div class='landingPage' id='landingPage'>
+    <h1>BROCOLI HIGH HOTEL</h1> 
+    <img src="images/Seguridad.png">
+    <a id="btmGo">Ir al LockCipher</a> 
+</div>
+
+    <!-- segunda pagina -->
+<div id='general'>
+    <div class='encabezado'>
+        <h1>BROCOLI HIGH HOTEL</h1> 
     </div>
+    
+    <div class='informacion'>
+     
+        <p>Interfaz de usuario (UI)
+                La interfaz debe permitir al usuario:
+                
+                Elegir un desplazamiento (offset) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
+                Insertar un mensaje (texto) que queremos cifrar.
+                Ver el resultado del mensaje cifrado.
+                Insertar un mensaje (texto) a descifrar.
+                Ver el resultado del mensaje descifrado.
+                
+                //Definición del producto
+                
+                Los principales usuarios de mi producto son:
+                
+                Persona cualquier edad  de vacaciones, con ganas de explorar en lugar sin pertenencias o cosas que entorpezcan su estadia en un lugar paradisiaco, libre. 
+                
+                LockCipher nace con la premisa de cubrir esa necesidad de sentir libertad total de sus usuarios.  
+                
+                Permitiendoles fluir sin estar pensar en la llave de su habitacion en escenarios como el entrar a disfrutar el mar</p>
+    
+    </div>
+      <div class='body'>
+            <p> Ingrese su Nombre</p>
+            <input type='text' id='string'></input>
+            <br>
+            <p> Ingrese su nro de Habitacion </p>
+            <input type ='text' id='offset'></input>
+            <br>
+            <a id='btmCipher'> CIPHER </a>
+            <br>
+            <a id='btmDecipher'> DECIPHER</a>
+            <br>
+            <h2 id='result'></h2>
+    </div>
+
+</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
