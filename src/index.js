@@ -5,7 +5,7 @@ const buttomCipher = document.getElementById('btmCipher');
 const buttomDecipher = document.getElementById('btmDecipher');
 // paginas 
 const landingPage = document.getElementById('landingPage');
-const genealPage = document.getElementById('general');
+const generalPage = document.getElementById('general');
 
 // resultado 
 
