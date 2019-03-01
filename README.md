@@ -6,7 +6,7 @@ basado en el cifrado de cesar. El **cifrado de cesar** es uno de los primeros m�
 
 Los usuarios que deseen hacer uso de esta modalidad, para abrir puertas y ventanas deberan ingresar su codigo personal. 
 
-Accede a la plataforma haciendo click en el link: GHP
+🔗__Accede a la plataforma haciendo click en el link: GHP__
 
 ## LockCipher es para...
 
@@ -26,7 +26,7 @@ Confianza y comodidad, reemplaza las llaves. Que tienden a generar peso y estré
 
 ## Construido con 🛠️
 
-VanillaJS
+VanillaJS 🍦
 
 ### FlowChart
 
