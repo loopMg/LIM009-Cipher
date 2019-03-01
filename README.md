@@ -6,6 +6,8 @@ basado en el cifrado de cesar. El **cifrado de cesar** es uno de los primeros m�
 
 Los usuarios que deseen hacer uso de esta modalidad, para abrir puertas y ventanas deberan ingresar su codigo personal. 
 
+Accede a la plataforma haciendo click en el link: GHP
+
 ## LockCipher es para...
 
 Todo huesped, aficionado de la tecnologia que desee hacer uso de ella en todo momento. 
@@ -22,13 +24,19 @@ Todo huesped, aficionado de la tecnologia que desee hacer uso de ella en todo mo
 
 Confianza y comodidad, reemplaza las llaves. Que tienden a generar peso y estrés en caso de sufrir alguna perdida.
 
-## Ejemplos de Codigo
-
-![Function](function.gif "function decode")
-
 ## Construido con 🛠️
 
 VanillaJS
+
+### FlowChart
+
+![FLOWCHART](flowchart.jpeg)
+
+### Ejemplos de Codigo
+
+![DOM](DOM.gif "Interaction DOM")
+
+![Function](function.gif "function decode")
 
 ## Autorx ✒️
 

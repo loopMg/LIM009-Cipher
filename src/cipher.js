@@ -44,7 +44,5 @@ window.cipher = {
     }
   }
     return result;
-  
-    /* Acá va tu código */
   }
 };

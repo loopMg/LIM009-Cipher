@@ -1,4 +1,3 @@
-/* Acá va tu código */
 // botones
 const buttomGoLockCipher = document.getElementById('btmGo');
 const buttomCipher = document.getElementById('btmCipher');
