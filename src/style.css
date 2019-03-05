@@ -3,7 +3,7 @@ margin: 0px;
 padding: 0px;
 width: 100%;
 height: 100%;   
-overflow: hidden; 
+/* overflow: hidden;  */
 }
     /*BackGround landingpage*/
 .landingPage {
@@ -12,8 +12,9 @@ overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
     display: block;  
+    overflow: hidden; 
+
 } 
-    
     /*Title Landingpage*/
 .landingPage h1{
     height:  200px; 
@@ -242,7 +243,9 @@ img {
 @media screen and (max-width: 400px) {
     
     .landingPage {
-        background-color: grey;
+        background-image: url("Images/holiday.jpg");
+        background-size: 100%, 700px;
+        /* background-color: grey; */
         background-attachment: fixed;
         background-repeat: no-repeat;
         display: block;  
@@ -306,7 +309,7 @@ img {
     
 .encabezado {
     margin: auto;
-    width: 600px;
+    width: 100%;
     height: 70px;
     background-color: transparent;
     display: block;    
@@ -331,8 +334,8 @@ img {
     color: black;
     display: block;
     float: left;
-    padding-left: 10px;
-    background-color: transparent;
+    padding-left: -10px;
+    background-color:transparent;
     padding-top: 22px;
 }
 .menu {
@@ -348,14 +351,12 @@ img {
 .informacion {
     float: left;
     width: 100%;
-    height: 200px;
-    background-color: transparent;
+    height: 210px;
 }
 .informacion h2{
     font-size: 20px;
     height: 25px;
     text-align: center;
-    background-color: transparent;
     padding-top: 10px;
     font-family: 'Staatliches', cursive;     
 }
@@ -364,6 +365,7 @@ img {
     font-size: 12px;
     text-align: center;
     font-family: 'Catamaran', sans-serif;
+    height: 50px;
 }
     /* Function box */
 .body {
