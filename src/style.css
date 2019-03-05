@@ -1,175 +1,479 @@
-/* Acá va tu código */
 *{
 margin: 0px;
 padding: 0px;
+width: 100%;
+height: 100%;   
+overflow: hidden; 
+}
+    /*BackGround landingpage*/
+.landingPage {
+    background-image: url("Images/holiday.jpg");
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: block;  
+} 
+    
+    /*Title Landingpage*/
+.landingPage h1{
+    height:  200px; 
+    font-family: 'Julius Sans One', sans-serif; 
+    font-weight: normal;
+    font-size: 80px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: black;
+    padding-top: 200px;
+    display: block;
+}
+    /*Img Landingpage*/
+img {
+    display:block;
+    width: 15%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+    /*Buttom Landingpage*/
+.landingPage a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Staatliches', cursive;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin:auto;
+    background-color:#49a5bf; 
+    color: white;
+    transition: 2s;
+    -webkit-transition: 1s;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.landingPage a:hover {
+    background-color: grey;
+    width: 300px;
+}
+    
+    /*Cipher Page */
+#general {
+    margin-top: 50px;
+    margin: auto;
+    width: 960px;
+    height:  856px;
+    background-color: white;
+    background-image: -webkit-linear-gradient(160deg, whitesmoke 50%, white  50%);
+    /* min-height: 600px; */
+} 
+    
+.encabezado {
+    margin: auto;
+    width: 960px;
+    height: 80px;
+    display: block;    
+}
+.encabezado img{
+    float: left;
+    width: 300px;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color:transparent;
+}
+.encabezado h1{
+    height:  60px; 
+    width: 600px;
+    font-family: 'Julius Sans One', sans-serif; 
+    font-weight: normal;
+    font-size: 60px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: black;
+    display: block;
+    float: right;
+    background-color: transparent;
+    padding-top: 22px;
+}
+.menu {
+    width: 960px;
+    height: 10px;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    border-bottom: 2px grey solid;
+}  
+
+    /* Instruction box */
+.informacion {
+    float: right;
+    width: 300px;
+    height: 500px;
+    padding-right: 20px;
+    background-color: transparent;
+}
+.informacion h2{
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    padding-top: 20px;
+    font-family: 'Staatliches', cursive;     
+}
+
+.informacion p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+    /* Function box */
+.body {
+    width: 600px; 
+    height: 500px;
+} 
+
+.body p{
+    width: 400px;
+    height: 30px;
+    text-align:left;
+    margin: auto;
+    padding-top: 50px;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+}
+    /* textBox string and offset  */ 
+.body input{
+    width: 360px;
+    height: 50px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px; 
+    --webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+} 
+
+#offset {
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+}   
+    /* buttoms cipher and decipher */   
+.body a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin:auto;
+    background-color: #49a5bf; 
+    color: white;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: 2s;
+    -webkit-transition: 1s;
+}
+.body a:hover {
+    background-color:grey;
+    width: 230px;
+}
+    /* String Result */
+#result {
+    font-family:'Libre Barcode 128', cursive; 
+    font-size: 80px;
+    display: block;
+    width: 580px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+}
+#result:hover {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 50px;
+}
+    /* End box */
+.piedepag {
+    width: 960px;
+    height: 230px;
+    padding-top: 10px;
+}
+.piedepag h2{
+    width: 960px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+.piedepag div{    
+    margin-left: 10px;
+    width: 300px;
+    height: 150px;
+    display: inline-block;
+}
+
+.piedepag img {
+    width: 300px;
+    border-radius: 5px;
+    clip-path: circle(60px at 50% 80px);
+    transition: clip-path 2s;
+}
+
+.piedepag img:hover {
+    clip-path: circle(600px at center);
+}
+
+.piedepag p {
+    background-color: black;
+    color: white;
     width: 100%;
-    height: 100%;   
-    overflow:hidden; 
-    }
-    /*fondo landingpage*/
+    height: 50px;
+    display: block;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+/* __________________________________________________________ */
+@media screen and (max-width: 400px) {
+    
     .landingPage {
-        background-image: url("Images/island.jpg");
-        background-size: 100%, 100%;
+        background-color: grey;
         background-attachment: fixed;
         background-repeat: no-repeat;
         display: block;  
     } 
     
-    /*titulo de landingpage*/
-    .landingPage h1{
-        height:  200px; 
-        /* font-family: "Courier New"; */
-        font-family: 'Staatliches', cursive;
-        font-weight: normal;
-        font-size: 80px;
-        letter-spacing: -0.03em;
-    /* line-height: 580px;  */
-        text-align: center;
-        color: black;
-        padding-top: 200px;
-        display: block;
-    }
-    /*imagen de landingpage*/
-    img {
-        display:block;
-        width: 15%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 10px;
-        padding-bottom: 30px;
-      }
-    /*boton de landingpage*/
-    .landingPage a{
-        text-decoration: none;
-        display: block;
-        font-family: 'Staatliches', cursive;
-        width: 200px;
-        height: 30px;
-        text-align: center;
-        padding-top: 10px;
-        margin:auto;
-        /* vertical-align: middle; */
-    
-       background-color:#49a5bf; /*  #1f3b08; */
-        color: white;
-    
-        transition: 2s;
-        -webkit-transition: 1s;
-        
-        -webkit-border-radius: 5px;
+    /*Title Landingpage*/
+.landingPage h1{
+    /* height:  200px;  */
+    font-family: 'Julius Sans One', sans-serif; 
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: black;
+    /* padding-top: 200px; */
+    display: block;
+}
+    /*Img Landingpage*/
+img {
+    display:block;
+    width: 15%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+    /*Buttom Landingpage*/
+.landingPage a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Staatliches', cursive;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin:auto;
+    background-color:#49a5bf; 
+    color: white;
+    transition: 2s;
+    -webkit-transition: 1s;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
-    }
+}
+.landingPage a:hover {
+    background-color: grey;
+    width: 300px;
+}
+
+/*Cipher Page */
+
+#general {
+    /* margin-top: 50px; */
+    margin: auto;
+    width: 100%;
+    /* height:  900px; */
+    background-color: white;
+    background-image: -webkit-linear-gradient(160deg, whitesmoke 50%, white  50%);
+    /* min-height: 600px; */
+} 
     
-    .landingPage a:hover {
-        background-color: grey;/*  #e9d4b3; */
-        width: 900px;
-    }
-    
-    /*pagina de cifrado */
-    #general {
-        display: block;
-        margin-top: 50px;
-        margin: auto;
-        width: 960px;
-        height:  800px;
-        background: rgba(242,246,248,1);
-        background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,0.96) 82%, rgba(216,225,231,0.95) 92%, rgba(224,239,249,0.95) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(82%, rgba(181,198,208,0.96)), color-stop(92%, rgba(216,225,231,0.95)), color-stop(100%, rgba(224,239,249,0.95)));
-        background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,0.96) 82%, rgba(216,225,231,0.95) 92%, rgba(224,239,249,0.95) 100%);
-        background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,0.96) 82%, rgba(216,225,231,0.95) 92%, rgba(224,239,249,0.95) 100%);
-        background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,0.96) 82%, rgba(216,225,231,0.95) 92%, rgba(224,239,249,0.95) 100%);
-        background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(181,198,208,0.96) 82%, rgba(216,225,231,0.95) 92%, rgba(224,239,249,0.95) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );   
-    } 
-    
-    .encabezado {
-        margin: auto;
-        width: 960px;
-        height: 150px;
-        background-color: black;
-    
-    }
-    
-    .encabezado h1{
-        height:  200px; 
-        font-family: 'Staatliches', cursive;
-        font-weight: normal;
-        font-size: 80px;
-        letter-spacing: -0.01em;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        display: block;
-    }
-    
-    .informacion {
-        float: right;
-        width: 300px;
-        height: 500px;
-        background-color: transparent;
-    }
-    
-    .body {
-        width: 660px; 
-        height: 650px;
-        background-color: transparent; 
-      
-    }
-    
-    .body p{
-        width: 400px;
-        height: 50px;
-        text-align:left;
-        margin: auto;
-        padding-top: 50px;
-        font-family: 'Staatliches', cursive;
-    }
-    
-    .body input{
-        width: 360px;
-        height: 50px;
-        margin-left: 150px;
-        text-align: center;
-        background-color: transparent;
-        border: 0;
-        border-radius: 5px; 
-    
+.encabezado {
+    margin: auto;
+    width: 600px;
+    height: 70px;
+    background-color: transparent;
+    display: block;    
+}
+.encabezado img{
+    /* float: left; */
+    width: 150px;
+    height: 25px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+.encabezado h1{
+    height:  40px; 
+    width: 200px;
+    font-family: 'Julius Sans One', sans-serif; 
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: black;
+    display: block;
+    float: left;
+    padding-left: 10px;
+    background-color: transparent;
+    padding-top: 22px;
+}
+.menu {
+    width: 960px;
+    height: 10px;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    border-bottom: 2px grey solid;
+}  
+
+    /* Instruction box */
+.informacion {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+}
+.informacion h2{
+    font-size: 20px;
+    height: 25px;
+    text-align: center;
+    background-color: transparent;
+    padding-top: 10px;
+    font-family: 'Staatliches', cursive;     
+}
+
+.informacion p{
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+    /* Function box */
+.body {
+   
+    width: 100%; 
+    height: 550px;
+    background-color:transparent;
+} 
+
+.body p{
+    /* width: 180px; */
+    height: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Staatliches', cursive;
+    font-size: 17px;
+    background-color: transparent;
+    padding-left: 25px;
+}
+    /* textBox string and offset  */ 
+.body input{
+    width: 200px;
+    height: 50px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px; 
     --webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    }
-    
-    #offset {
-        width: 50px;
-        height: 50px;
-        margin-left: 150px;
-    }
-    
-    .body a{
-        text-decoration: none;
-        display: block;
-        font-family: 'Staatliches', cursive;
-        width: 200px;
-        height: 30px;
-        text-align: center;
-        padding-top: 10px;
-        margin:auto;
-        background-color: grey; 
-        color: white;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-    }
-    
-    #result {
-        font-family:'ZCOOL QingKe HuangYou', cursive;
-        font-size: 50px;
-        display: block;
-        width: 600px;
-        height: 80px;
-        text-align: center;
-        margin: auto;
-        padding-top: 50px;
-        background-color: transparent;
-    }
-    
+} 
+
+#offset {
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+}   
+    /* buttoms cipher and decipher */   
+.body a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin:auto;
+    background-color: #49a5bf; 
+    color: white;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: 2s;
+    -webkit-transition: 1s;
+}
+.body a:hover {
+    background-color:grey;
+    width: 230px;
+}
+    /* String Result */
+#result {
+    font-family:'Libre Barcode 128', cursive; 
+    font-size: 70px;
+    display: block;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+}
+#result:hover {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 50px;
+}
+    /* End box */
+.piedepag {
+    width: 100%;
+    height: 180px;
+    padding-top: 10px;
+}
+.piedepag h2{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+.piedepag div{    
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.piedepag img {
+    width: 100px;
+    border-radius: 5px;
+    clip-path: circle(40px at 50% 45px);
+    transition: clip-path 2s;
+}
+
+.piedepag img:hover {
+    clip-path: circle(400px at center);
+} 
+ .piedepag p {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+}
